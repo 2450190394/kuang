@@ -1,0 +1,44 @@
+1创建目录/创建文件夹/创建文件:mkdir 名字
+2压缩：1）打包：  tar -cvf 打包后名字（.tar）打包文件（多个用空格隔开）
+            2）压缩：  tar -zcvf 压缩后名字 （）   压缩文件 
+                                   -z 用gzip压缩方式，后缀建议.tar.gz   
+                                   -j  用bzip2压缩方式，后缀建议.tar.bz2   
+                                   -J  用xz压缩方式，后缀建议.tar.xz
+                  压缩速度：gz>bz2>xz   压缩率：gz<bz2<xz
+             3)指定解压文件保存目录：-C 列如：tar -xf yl.tar.gz -C /home/
+3拷贝到另外路径  cp 或者解压时用 tar -xf 要解压文件 -C /home/ 保存到其他目录
+4解压， tar -xf 要解压文件
+5编辑其中某一个文件（配置文件），保存     vi  wq
+6登录数据库，查看数据  
+7监控查看日志：tail/cat命令            tial -f /var/log/message (不指定默认显示10行)
+                                                       cat /var/log/message （显示全部）   
+         log位置：/var/log/message  系统启动后的信息和错误日志信息
+                        /var/log/secure      与安全相关的日志信息
+                        /var/log/maillog     与邮件相关的日志信息
+                       /var/log/ cron          与定时相关的日志信息
+                       /var/log/ spooler     与UUCP和news相关的日志信息
+                       /var/log/ boot.log    守护进程启动和停止相关的日志信息
+                      
+8监控服务器运行的进程，运行情况  ps -e/A 查看所有进程
+                                                      
+
+
+2008搭建IIS Apache
+每日更新简历（每天做了什么，能写）
+测试分类
+白盒测试黑盒测试
+灰盒测试：通过接口 数据库 日志
+
+selenium ide自动录制脚本工具
+badboy（有时间研究工作原理）
+
+
+
+项目启动阶段
+需求阶段    #产品经理《软件需求说明书》、《产品原型》，项目经理《项目里程碑》->
+                    《产品开发计划》->《项目任务分解》
+设计阶段    #ＵＩ设计师《界面效果图》
+开发阶段
+测试阶段
+发布上线
+维护
